@@ -83,6 +83,7 @@ const SearchBarInput = ({ onChange, onSubmit, isHomepage, onFocus, onBlur, onHid
       transitionProperty="transform,box-shadow,background-color,color,border-color"
       transitionDuration="normal"
       transitionTimingFunction="ease"
+      border="1px solid rgba(40,214,255,0.5)"
     >
       <InputGroup size={{ base: isHomepage ? 'md' : 'sm', lg: 'md' }}>
         <InputLeftElement w={{ base: isHomepage ? 6 : 4, lg: 6 }} ml={{ base: isHomepage ? 4 : 3, lg: 4 }} h="100%">
