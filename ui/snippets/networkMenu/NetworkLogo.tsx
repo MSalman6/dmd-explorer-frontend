@@ -52,8 +52,8 @@ const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
     <Box
       as="a"
       href={ route({ pathname: '/' }) }
-      width={{ base: '120px', lg: isCollapsed === false ? '120px' : '30px', xl: isCollapsed ? '30px' : '120px' }}
-      height={{ base: '24px', lg: isCollapsed === false ? '24px' : '30px', xl: isCollapsed ? '30px' : '24px' }}
+      // width={{ base: '120px', lg: isCollapsed === false ? '120px' : '30px', xl: isCollapsed ? '30px' : '120px' }}
+      // height={{ base: '24px', lg: isCollapsed === false ? '24px' : '30px', xl: isCollapsed ? '30px' : '24px' }}
       display="inline-flex"
       overflow="hidden"
       onClick={ onClick }
@@ -63,7 +63,7 @@ const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
       { /* big logo */ }
       <Image
         w="auto"
-        h="100%"
+        h="52px"
         src={ logoSrc }
         alt={ `${ config.chain.name } network logo` }
         fallback={ <LogoFallback isCollapsed={ isCollapsed }/> }
@@ -73,7 +73,7 @@ const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
       { /* small logo */ }
       <Image
         w="auto"
-        h="100%"
+        h="40px"
         src={ iconSrc }
         alt={ `${ config.chain.name } network logo` }
         fallback={ <LogoFallback isCollapsed={ isCollapsed } isSmall/> }
